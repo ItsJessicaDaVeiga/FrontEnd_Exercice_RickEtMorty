@@ -10,7 +10,7 @@ export default function Headers () {
 
       <div className="grow flex justify-center">
         <input className="grow py-1 px-3 rounded-l-full" placeholder=" Morty " />
-        <button className="px-4 rounded-r-full bg-purple-400 text-wrap "> Recherche </button>
+        <button className="px-4 rounded-r-full bg-purple-400 text-wrap "><img className="h-3" src="/loupev1.png"/> </button>
       </div>
 
       <div className="flex gap-6">
