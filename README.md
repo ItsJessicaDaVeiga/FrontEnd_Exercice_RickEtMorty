@@ -1,9 +1,9 @@
-# Projet de Formation Front-End : Application Rick and Morty
+# Projet Front-End : Application Rick and Morty
 
 ## Description
 Ce projet est une application front-end utilisant [React.js] pour afficher et rechercher des personnages de la série Rick and Morty. L'application consomme l'API Rick and Morty, permettant aux utilisateurs de parcourir une liste de personnages et d'accéder à leurs détails.
 
-## Technologies Utilisées
+## Technologies Utilisées 
 - Framework : [React.js]
 - Styling : Tailwind CSS
 - Gestion d'état et requêtes : [React Query]
