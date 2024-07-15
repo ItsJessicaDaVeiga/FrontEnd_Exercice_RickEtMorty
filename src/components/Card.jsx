@@ -1,6 +1,6 @@
-// import data from  ".......json"
+import PropTypes from "prop-types";
 
-export default function Card ({character}) {
+export default function Card ({ character }) {
   return (
     <div className=" flex flex-col">
       <img src={character.image}></img>
@@ -11,4 +11,15 @@ export default function Card ({character}) {
       </div>
     </div>
   )
+}
+
+// Donner une shape a la card en la typant 
+
+Card.propTypes = {
+  character: PropTypes.shape({
+    name: PropTypes.string.isRequired,
+    species: PropTypes.string.isRequired,
+    status: PropTypes.string.isRequired,
+    image: PropTypes.string.isRequired,
+  }).isRequired
 }
