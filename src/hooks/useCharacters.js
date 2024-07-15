@@ -2,7 +2,7 @@ import {
   useQuery,
 } from '@tanstack/react-query'
 
-export function Toto () {
+export function GetCharacters () {
   return useQuery({
     queryKey: ['fetch-characters'],
     queryFn: async () => {

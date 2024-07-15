@@ -1,15 +1,17 @@
-import { Toto } from "../hooks/useCharacters";
+import Card from "../components/Card";
+import { GetCharacters } from "../hooks/useCharacters";
 
 
 export default function List () {
-  const {isLoading, isSuccess, data} = Toto();
-  console.log("data",data.results )
-  //const Toto = {queryFn}
+  const {data} = GetCharacters();
+  //console.log(data)
+  //const charactersNames = characters.map(character => <span> {character.name} </span>)
+
   return (
     <>
-      <div> isLoading: {isLoading ? 'true' : 'false'}</div>
-      <div> isSuccess: {isSuccess ? 'true' : 'false'}</div>
-      
+      <div className= "grid grid-cols-[repeat(auto-fit,_minmax(300px,_1fr))] gap-20 p-10 " >
+        {data?.results?.map(character => (<Card character={character} key={character.id}/>))}
+      </div>
     </>
   )
 }
