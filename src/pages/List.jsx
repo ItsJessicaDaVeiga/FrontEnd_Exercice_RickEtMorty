@@ -1,10 +1,15 @@
-import { useQuery } from '@tanstack/react-query';
+import { Toto } from "../hooks/useCharacters";
+
 
 export default function List () {
+  const {isLoading, isSuccess, data} = Toto();
+  console.log("data",data.results )
+  //const Toto = {queryFn}
   return (
     <>
-      const GET_PERSO = 
-      <span>List</span>
+      <div> isLoading: {isLoading ? 'true' : 'false'}</div>
+      <div> isSuccess: {isSuccess ? 'true' : 'false'}</div>
+      
     </>
   )
 }
