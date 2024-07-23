@@ -1,8 +1,9 @@
 import {NavLink} from "react-router-dom";
-import searchIcon from "/loupev1.png";
+
 import logo from "/logo.png";
 import menuIcon from "/open-menu.png";
 import { useState } from "react";
+import SearchBar from "./SearchBar";
 
 
 
@@ -32,10 +33,7 @@ export default function Headers () {
           </NavLink>
         </div>
 
-        <div className="grow flex justify-center">
-          <input className="grow py-1 px-3 rounded-l-full" placeholder=" Morty " />
-          <button className="px-4 rounded-r-full bg-mint text-wrap "><img className="h-3" src={searchIcon}/> </button>
-        </div>
+        <SearchBar />
 
         <div className=" hidden md:flex gap-6">
           <NavLinks />
