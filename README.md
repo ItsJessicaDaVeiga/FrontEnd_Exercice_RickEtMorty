@@ -1,4 +1,4 @@
-# Projet Rick and Morty - Application ReactJS
+# Exercice Rick and Morty - Application ReactJS
 
 ## Description
 
